@@ -1,0 +1,4 @@
+validInput,testuser2025@gmail.com,testuser2025,TestUser
+invalidUserName,test1user2025@gmail.com,testuser2025,TestUser
+invalidPassWord,testuser2025@gmail.com,test1user2025,TestUser
+invalidUserNameAndPassword,test1user2025@gmail,test1user2025,TestUser

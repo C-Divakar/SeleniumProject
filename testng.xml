@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite"  thread-count="5" >
+    <test name="Home">
+        <classes>
+            <class name="org.HomePageTest"/>
+<!--           <class name="org.LoginPageTest"/>-->
+        </classes>
+    </test>
+</suite>

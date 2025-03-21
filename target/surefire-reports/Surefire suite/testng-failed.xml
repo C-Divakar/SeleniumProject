@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="org.MainPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testFindAllNavItems"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.MainPageTest -->
+      <class name="org.TestExample">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testTitle"/>
+        </methods>
+      </class> <!-- org.TestExample -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
