@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.utils.ExtentReportManager;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -47,11 +46,8 @@ public abstract class BasePage {
     protected boolean isElementDisplayed(WebElement element) {
         try {
             waitForVisibility(element);
-            boolean displayed = element.isDisplayed();
-            test.info("Element displayed: " + displayed);
-            return displayed;
+            return element.isDisplayed();
         } catch (Exception e) {
-            test.fail("Element not displayed: " + e.getMessage());
             return false;
         }
     }
