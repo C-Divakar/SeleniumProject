@@ -29,17 +29,14 @@ public class LoginPage extends BasePage {
 
     public void enterEmail(String email) {
         emailInput.sendKeys(email);
-        test.info("Entered email: " + email);
     }
 
     public void enterPassword(String password) {
         passwordInput.sendKeys(password);
-        test.info("Entered password");
     }
 
     public void clickLoginButton() {
         loginButton.click();
-        test.info("Clicked login button");
     }
 
     public void login(String email, String password) {
@@ -47,7 +44,6 @@ public class LoginPage extends BasePage {
         enterEmail(email);
         enterPassword(password);
         clickLoginButton();
-        test.info("Performed login with email: " + email);
     }
 
     public String getErrorMessageText() {
